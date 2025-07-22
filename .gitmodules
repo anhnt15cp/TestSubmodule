@@ -1,0 +1,4 @@
+[submodule "Modules/2Submodule"]
+	path = Modules/2Submodule
+	url = https://github.com/anhnt15cp/2Submodule.git
+	branch = main
