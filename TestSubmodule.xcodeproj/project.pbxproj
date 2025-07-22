@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CC41649B2E2F9ABF00BD9206 /* Submodule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC41649A2E2F9ABF00BD9206 /* Submodule.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC4164992E2F9ABF00BD9206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC4164272E2F999100BD9206 /* Submodule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC41635F2E2F896000BD9206;
+			remoteInfo = Submodule;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CC4163272E2F852400BD9206 /* TestSubmodule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSubmodule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4164272E2F999100BD9206 /* Submodule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Submodule.xcodeproj; path = Modules/2Submodule/Submodule.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC41649B2E2F9ABF00BD9206 /* Submodule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +61,9 @@
 		CC41631E2E2F852400BD9206 = {
 			isa = PBXGroup;
 			children = (
+				CC4164272E2F999100BD9206 /* Submodule.xcodeproj */,
 				CC4163292E2F852400BD9206 /* TestSubmodule */,
+				CC4164972E2F9ABF00BD9206 /* Frameworks */,
 				CC4163282E2F852400BD9206 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +74,21 @@
 				CC4163272E2F852400BD9206 /* TestSubmodule.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CC4164282E2F999100BD9206 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC41649A2E2F9ABF00BD9206 /* Submodule.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC4164972E2F9ABF00BD9206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,12 +143,28 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CC4163282E2F852400BD9206 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CC4164282E2F999100BD9206 /* Products */;
+					ProjectRef = CC4164272E2F999100BD9206 /* Submodule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CC4163262E2F852400BD9206 /* TestSubmodule */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CC41649A2E2F9ABF00BD9206 /* Submodule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Submodule.framework;
+			remoteRef = CC4164992E2F9ABF00BD9206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CC4163252E2F852400BD9206 /* Resources */ = {
